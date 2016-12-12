@@ -194,6 +194,26 @@
                                             <segue destination="wcd-er-gJV" kind="push" id="zQx-5V-dHe"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="TUj-dW-pES" style="IBUITableViewCellStyleDefault" id="zb9-Ek-O88">
+                                        <rect key="frame" x="0.0" y="464" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zb9-Ek-O88" id="PcE-r8-O8g">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TUj-dW-pES">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="49.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Fh1-YG-U1v" kind="push" id="bRz-KO-LAZ"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -209,6 +229,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcT-IF-26O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="566" y="304"/>
+        </scene>
+        <!--test-->
+        <scene sceneID="wyf-MV-0Ad">
+            <objects>
+                <viewController id="Fh1-YG-U1v" customClass="testViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MuU-d6-8NB"/>
+                        <viewControllerLayoutGuide type="bottom" id="wSz-eJ-3ev"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yTz-H9-05T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="111" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-A8-G2Q">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz7-q6-6TI">
+                                <rect key="frame" x="92" y="256" width="136" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="caV-eH-ttY">
+                                <rect key="frame" x="18" y="299" width="284" height="31"/>
+                                <connections>
+                                    <action selector="update:" destination="Fh1-YG-U1v" eventType="valueChanged" id="z9S-u2-ScS"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="test" id="I3p-2r-pIE"/>
+                    <connections>
+                        <outlet property="blurImageView" destination="T4u-A8-G2Q" id="Xbu-FV-Y1n"/>
+                        <outlet property="currentLevel" destination="Hz7-q6-6TI" id="d9l-Eb-6iB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzj-TH-bUO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="1102"/>
         </scene>
         <!--BlurEffect-->
         <scene sceneID="6Qo-cc-OyT">
@@ -776,6 +836,7 @@
     <resources>
         <image name="-2000" width="640" height="256"/>
         <image name="-3000" width="640" height="320"/>
+        <image name="111" width="640" height="1136"/>
         <image name="Lambeau" width="630" height="471"/>
         <image name="WID-small" width="640" height="857"/>
         <image name="chi-qing-zhong22-1" width="960" height="540"/>

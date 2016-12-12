@@ -1,27 +1,29 @@
 //
-//  vImageViewController.m
+//  testViewController.m
 //  blurViewExample
 //
-//  Created by 王斌 on 16/4/7.
+//  Created by 王斌 on 16/4/11.
 //  Copyright © 2016年 Changhong electric Co., Ltd. All rights reserved.
 //
 
-#import "vImageViewController.h"
+#import "testViewController.h"
+#import "FXBlurView.h"
 
-#import <Accelerate/Accelerate.h>
-
-@interface vImageViewController ()
-@property (strong, nonatomic) IBOutlet UIImageView *blurImageView;
-@property (strong, nonatomic) IBOutlet UILabel *currentLevel;
+@interface testViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *currentLevel;
+@property (weak, nonatomic) IBOutlet UIImageView *blurImageView;
 
 @end
 
-@implementation vImageViewController
+@implementation testViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.blurImageView.image = [self blurryImage:[UIImage imageNamed:@"-3000"] withBlurLevel:0.5f];
+    // Do any additional setup after loading the view.
+//    self.blurView.tintColor = [UIColor grayColor];
+//    self.blurView.dynamic = YES;
+//    self.blurView.blurRadius = 20.0;
+    self.blurImageView.image = [self blurryImage:[UIImage imageNamed:@"111"] withBlurLevel:0.2];
 
 }
 
@@ -29,12 +31,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)updateBlur:(UISlider *)sender {
+- (IBAction)update:(UISlider *)sender {
     
     self.currentLevel.text = [NSString stringWithFormat:@"%f",sender.value];
-    self.blurImageView.image = [self blurryImage:[UIImage imageNamed:@"-3000"] withBlurLevel:sender.value];
-
+    
+    self.blurImageView.image = [self blurryImage:[UIImage imageNamed:@"111"] withBlurLevel:sender.value];
 }
 
 // 添加通用模糊效果

@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6251BBBF1CB5E28E00D47733 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBBE1CB5E28E00D47733 /* main.m */; };
+		6251BBC21CB5E28E00D47733 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBC11CB5E28E00D47733 /* AppDelegate.m */; };
+		6251BBC81CB5E28E00D47733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6251BBC61CB5E28E00D47733 /* Main.storyboard */; };
+		6251BBCA1CB5E28E00D47733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6251BBC91CB5E28E00D47733 /* Assets.xcassets */; };
+		6251BBCD1CB5E28E00D47733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6251BBCB1CB5E28E00D47733 /* LaunchScreen.storyboard */; };
+		6251BBD81CB5E28E00D47733 /* blurViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBD71CB5E28E00D47733 /* blurViewExampleTests.m */; };
+		6251BBE41CB5E4C800D47733 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBE31CB5E4C800D47733 /* RootTableViewController.m */; };
+		6251BBE71CB6003500D47733 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBE61CB6003500D47733 /* BasicViewController.m */; };
+		6251BBEB1CB6107200D47733 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6251BBEA1CB6107200D47733 /* Accelerate.framework */; };
+		6251BBED1CB6107900D47733 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6251BBEC1CB6107900D47733 /* QuartzCore.framework */; };
+		6251BBF11CB623CA00D47733 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBF01CB623CA00D47733 /* FXBlurView.m */; };
+		6251BBF41CB6299B00D47733 /* OverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBF31CB6299B00D47733 /* OverlayViewController.m */; };
+		6251BBF81CB6436C00D47733 /* AnimatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBF71CB6436C00D47733 /* AnimatedViewController.m */; };
+		6251BBFB1CB6638500D47733 /* vImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6251BBFA1CB6638500D47733 /* vImageViewController.m */; };
+		62660A941CBB964B00C76D38 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62660A931CBB964B00C76D38 /* testViewController.m */; };
+		62D8C4C51CB7347C00E5F2E1 /* CoreImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C4C41CB7347C00E5F2E1 /* CoreImageViewController.m */; };
+		62D8C4C81CB748DB00E5F2E1 /* BlurEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C4C71CB748DB00E5F2E1 /* BlurEffectViewController.m */; };
+		62D8C4D41CB778B800E5F2E1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8C4D31CB778B800E5F2E1 /* CoreMedia.framework */; };
+		62D8C4D61CB778CB00E5F2E1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8C4D51CB778CB00E5F2E1 /* CoreVideo.framework */; };
+		62D8C4D81CB778DA00E5F2E1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8C4D71CB778DA00E5F2E1 /* OpenGLES.framework */; };
+		62D8C4DA1CB778E600E5F2E1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8C4D91CB778E600E5F2E1 /* AVFoundation.framework */; };
+		62D8C4ED1CB77BC000E5F2E1 /* GPUImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C4EC1CB77BC000E5F2E1 /* GPUImageViewController.m */; };
+		62D8C4F11CB77DB800E5F2E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8C4F01CB77DB800E5F2E1 /* Foundation.framework */; };
+		62D8C4F31CB77DD800E5F2E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8C4F21CB77DD800E5F2E1 /* CoreGraphics.framework */; };
+		62D8C4F51CB77DDE00E5F2E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8C4F41CB77DDE00E5F2E1 /* UIKit.framework */; };
+		62D8C4FC1CB7A43200E5F2E1 /* ImageEffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C4FB1CB7A43200E5F2E1 /* ImageEffectsViewController.m */; };
+		62D8C5001CB7A50000E5F2E1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D8C4FF1CB7A50000E5F2E1 /* UIImage+ImageEffects.m */; };
+		62D8C50D1CB7A75200E5F2E1 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D8C5081CB7A73800E5F2E1 /* libGPUImage.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6251BBD41CB5E28E00D47733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6251BBB21CB5E28D00D47733 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6251BBB91CB5E28D00D47733;
+			remoteInfo = blurViewExample;
+		};
+		62D8C5071CB7A73800E5F2E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62D8C5011CB7A73800E5F2E1 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		62D8C5091CB7A73800E5F2E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62D8C5011CB7A73800E5F2E1 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCE209E51943F20C002FEED8;
+			remoteInfo = GPUImageFramework;
+		};
+		62D8C50B1CB7A74900E5F2E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62D8C5011CB7A73800E5F2E1 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6251BBBA1CB5E28E00D47733 /* blurViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blurViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6251BBBE1CB5E28E00D47733 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6251BBC01CB5E28E00D47733 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6251BBC11CB5E28E00D47733 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6251BBC71CB5E28E00D47733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6251BBC91CB5E28E00D47733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6251BBCC1CB5E28E00D47733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6251BBCE1CB5E28E00D47733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6251BBD31CB5E28E00D47733 /* blurViewExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blurViewExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6251BBD71CB5E28E00D47733 /* blurViewExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blurViewExampleTests.m; sourceTree = "<group>"; };
+		6251BBD91CB5E28E00D47733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6251BBE21CB5E4C800D47733 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		6251BBE31CB5E4C800D47733 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
+		6251BBE51CB6003500D47733 /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
+		6251BBE61CB6003500D47733 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
+		6251BBEA1CB6107200D47733 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6251BBEC1CB6107900D47733 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6251BBEF1CB623CA00D47733 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		6251BBF01CB623CA00D47733 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		6251BBF21CB6299B00D47733 /* OverlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayViewController.h; sourceTree = "<group>"; };
+		6251BBF31CB6299B00D47733 /* OverlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayViewController.m; sourceTree = "<group>"; };
+		6251BBF61CB6436C00D47733 /* AnimatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedViewController.h; sourceTree = "<group>"; };
+		6251BBF71CB6436C00D47733 /* AnimatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedViewController.m; sourceTree = "<group>"; };
+		6251BBF91CB6638500D47733 /* vImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vImageViewController.h; sourceTree = "<group>"; };
+		6251BBFA1CB6638500D47733 /* vImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vImageViewController.m; sourceTree = "<group>"; };
+		62660A921CBB964B00C76D38 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		62660A931CBB964B00C76D38 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		62D8C4C31CB7347C00E5F2E1 /* CoreImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreImageViewController.h; sourceTree = "<group>"; };
+		62D8C4C41CB7347C00E5F2E1 /* CoreImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreImageViewController.m; sourceTree = "<group>"; };
+		62D8C4C61CB748DB00E5F2E1 /* BlurEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurEffectViewController.h; sourceTree = "<group>"; };
+		62D8C4C71CB748DB00E5F2E1 /* BlurEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurEffectViewController.m; sourceTree = "<group>"; };
+		62D8C4D31CB778B800E5F2E1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		62D8C4D51CB778CB00E5F2E1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		62D8C4D71CB778DA00E5F2E1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		62D8C4D91CB778E600E5F2E1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		62D8C4EB1CB77BC000E5F2E1 /* GPUImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageViewController.h; sourceTree = "<group>"; };
+		62D8C4EC1CB77BC000E5F2E1 /* GPUImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageViewController.m; sourceTree = "<group>"; };
+		62D8C4F01CB77DB800E5F2E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		62D8C4F21CB77DD800E5F2E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		62D8C4F41CB77DDE00E5F2E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		62D8C4FA1CB7A43200E5F2E1 /* ImageEffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageEffectsViewController.h; sourceTree = "<group>"; };
+		62D8C4FB1CB7A43200E5F2E1 /* ImageEffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageEffectsViewController.m; sourceTree = "<group>"; };
+		62D8C4FE1CB7A50000E5F2E1 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		62D8C4FF1CB7A50000E5F2E1 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		62D8C5011CB7A73800E5F2E1 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = blurViewExample/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6251BBB71CB5E28D00D47733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D8C50D1CB7A75200E5F2E1 /* libGPUImage.a in Frameworks */,
+				62D8C4F51CB77DDE00E5F2E1 /* UIKit.framework in Frameworks */,
+				62D8C4F31CB77DD800E5F2E1 /* CoreGraphics.framework in Frameworks */,
+				62D8C4F11CB77DB800E5F2E1 /* Foundation.framework in Frameworks */,
+				62D8C4DA1CB778E600E5F2E1 /* AVFoundation.framework in Frameworks */,
+				62D8C4D81CB778DA00E5F2E1 /* OpenGLES.framework in Frameworks */,
+				62D8C4D61CB778CB00E5F2E1 /* CoreVideo.framework in Frameworks */,
+				62D8C4D41CB778B800E5F2E1 /* CoreMedia.framework in Frameworks */,
+				6251BBED1CB6107900D47733 /* QuartzCore.framework in Frameworks */,
+				6251BBEB1CB6107200D47733 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6251BBD01CB5E28E00D47733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6251BBB11CB5E28D00D47733 = {
+			isa = PBXGroup;
+			children = (
+				6251BBBC1CB5E28E00D47733 /* blurViewExample */,
+				6251BBD61CB5E28E00D47733 /* blurViewExampleTests */,
+				6251BBBB1CB5E28E00D47733 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6251BBBB1CB5E28E00D47733 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6251BBBA1CB5E28E00D47733 /* blurViewExample.app */,
+				6251BBD31CB5E28E00D47733 /* blurViewExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6251BBBC1CB5E28E00D47733 /* blurViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				62D8C4FD1CB7A50000E5F2E1 /* UIImage+ImageEffects */,
+				6251BBEE1CB623CA00D47733 /* FXBlurView */,
+				6251BBC01CB5E28E00D47733 /* AppDelegate.h */,
+				6251BBC11CB5E28E00D47733 /* AppDelegate.m */,
+				6251BBE21CB5E4C800D47733 /* RootTableViewController.h */,
+				6251BBE31CB5E4C800D47733 /* RootTableViewController.m */,
+				6251BBE51CB6003500D47733 /* BasicViewController.h */,
+				6251BBE61CB6003500D47733 /* BasicViewController.m */,
+				6251BBF21CB6299B00D47733 /* OverlayViewController.h */,
+				6251BBF31CB6299B00D47733 /* OverlayViewController.m */,
+				6251BBF61CB6436C00D47733 /* AnimatedViewController.h */,
+				6251BBF71CB6436C00D47733 /* AnimatedViewController.m */,
+				6251BBF91CB6638500D47733 /* vImageViewController.h */,
+				6251BBFA1CB6638500D47733 /* vImageViewController.m */,
+				62D8C4C31CB7347C00E5F2E1 /* CoreImageViewController.h */,
+				62D8C4C41CB7347C00E5F2E1 /* CoreImageViewController.m */,
+				62D8C4C61CB748DB00E5F2E1 /* BlurEffectViewController.h */,
+				62D8C4C71CB748DB00E5F2E1 /* BlurEffectViewController.m */,
+				62D8C4EB1CB77BC000E5F2E1 /* GPUImageViewController.h */,
+				62D8C4EC1CB77BC000E5F2E1 /* GPUImageViewController.m */,
+				62D8C4FA1CB7A43200E5F2E1 /* ImageEffectsViewController.h */,
+				62D8C4FB1CB7A43200E5F2E1 /* ImageEffectsViewController.m */,
+				62660A921CBB964B00C76D38 /* testViewController.h */,
+				62660A931CBB964B00C76D38 /* testViewController.m */,
+				6251BBC61CB5E28E00D47733 /* Main.storyboard */,
+				6251BBC91CB5E28E00D47733 /* Assets.xcassets */,
+				6251BBCB1CB5E28E00D47733 /* LaunchScreen.storyboard */,
+				6251BBCE1CB5E28E00D47733 /* Info.plist */,
+				6251BBBD1CB5E28E00D47733 /* Supporting Files */,
+			);
+			path = blurViewExample;
+			sourceTree = "<group>";
+		};
+		6251BBBD1CB5E28E00D47733 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6251BBF51CB631A400D47733 /* frameworks */,
+				6251BBBE1CB5E28E00D47733 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6251BBD61CB5E28E00D47733 /* blurViewExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				6251BBD71CB5E28E00D47733 /* blurViewExampleTests.m */,
+				6251BBD91CB5E28E00D47733 /* Info.plist */,
+			);
+			path = blurViewExampleTests;
+			sourceTree = "<group>";
+		};
+		6251BBEE1CB623CA00D47733 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				6251BBEF1CB623CA00D47733 /* FXBlurView.h */,
+				6251BBF01CB623CA00D47733 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
+		6251BBF51CB631A400D47733 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62D8C5011CB7A73800E5F2E1 /* GPUImage.xcodeproj */,
+				62D8C4F41CB77DDE00E5F2E1 /* UIKit.framework */,
+				62D8C4F21CB77DD800E5F2E1 /* CoreGraphics.framework */,
+				62D8C4F01CB77DB800E5F2E1 /* Foundation.framework */,
+				62D8C4D91CB778E600E5F2E1 /* AVFoundation.framework */,
+				62D8C4D71CB778DA00E5F2E1 /* OpenGLES.framework */,
+				62D8C4D51CB778CB00E5F2E1 /* CoreVideo.framework */,
+				62D8C4D31CB778B800E5F2E1 /* CoreMedia.framework */,
+				6251BBEC1CB6107900D47733 /* QuartzCore.framework */,
+				6251BBEA1CB6107200D47733 /* Accelerate.framework */,
+			);
+			name = frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		62D8C4FD1CB7A50000E5F2E1 /* UIImage+ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				62D8C4FE1CB7A50000E5F2E1 /* UIImage+ImageEffects.h */,
+				62D8C4FF1CB7A50000E5F2E1 /* UIImage+ImageEffects.m */,
+			);
+			path = "UIImage+ImageEffects";
+			sourceTree = "<group>";
+		};
+		62D8C5021CB7A73800E5F2E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62D8C5081CB7A73800E5F2E1 /* libGPUImage.a */,
+				62D8C50A1CB7A73800E5F2E1 /* GPUImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6251BBB91CB5E28D00D47733 /* blurViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6251BBDC1CB5E28E00D47733 /* Build configuration list for PBXNativeTarget "blurViewExample" */;
+			buildPhases = (
+				6251BBB61CB5E28D00D47733 /* Sources */,
+				6251BBB71CB5E28D00D47733 /* Frameworks */,
+				6251BBB81CB5E28D00D47733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62D8C50C1CB7A74900E5F2E1 /* PBXTargetDependency */,
+			);
+			name = blurViewExample;
+			productName = blurViewExample;
+			productReference = 6251BBBA1CB5E28E00D47733 /* blurViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6251BBD21CB5E28E00D47733 /* blurViewExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6251BBDF1CB5E28E00D47733 /* Build configuration list for PBXNativeTarget "blurViewExampleTests" */;
+			buildPhases = (
+				6251BBCF1CB5E28E00D47733 /* Sources */,
+				6251BBD01CB5E28E00D47733 /* Frameworks */,
+				6251BBD11CB5E28E00D47733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6251BBD51CB5E28E00D47733 /* PBXTargetDependency */,
+			);
+			name = blurViewExampleTests;
+			productName = blurViewExampleTests;
+			productReference = 6251BBD31CB5E28E00D47733 /* blurViewExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6251BBB21CB5E28D00D47733 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Changhong electric Co., Ltd";
+				TargetAttributes = {
+					6251BBB91CB5E28D00D47733 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					6251BBD21CB5E28E00D47733 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6251BBB91CB5E28D00D47733;
+					};
+				};
+			};
+			buildConfigurationList = 6251BBB51CB5E28D00D47733 /* Build configuration list for PBXProject "blurViewExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6251BBB11CB5E28D00D47733;
+			productRefGroup = 6251BBBB1CB5E28E00D47733 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 62D8C5021CB7A73800E5F2E1 /* Products */;
+					ProjectRef = 62D8C5011CB7A73800E5F2E1 /* GPUImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6251BBB91CB5E28D00D47733 /* blurViewExample */,
+				6251BBD21CB5E28E00D47733 /* blurViewExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		62D8C5081CB7A73800E5F2E1 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = 62D8C5071CB7A73800E5F2E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62D8C50A1CB7A73800E5F2E1 /* GPUImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GPUImage.framework;
+			remoteRef = 62D8C5091CB7A73800E5F2E1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6251BBB81CB5E28D00D47733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6251BBCD1CB5E28E00D47733 /* LaunchScreen.storyboard in Resources */,
+				6251BBCA1CB5E28E00D47733 /* Assets.xcassets in Resources */,
+				6251BBC81CB5E28E00D47733 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6251BBD11CB5E28E00D47733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6251BBB61CB5E28D00D47733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62D8C4C51CB7347C00E5F2E1 /* CoreImageViewController.m in Sources */,
+				62D8C5001CB7A50000E5F2E1 /* UIImage+ImageEffects.m in Sources */,
+				62D8C4FC1CB7A43200E5F2E1 /* ImageEffectsViewController.m in Sources */,
+				6251BBC21CB5E28E00D47733 /* AppDelegate.m in Sources */,
+				6251BBFB1CB6638500D47733 /* vImageViewController.m in Sources */,
+				6251BBF41CB6299B00D47733 /* OverlayViewController.m in Sources */,
+				62D8C4C81CB748DB00E5F2E1 /* BlurEffectViewController.m in Sources */,
+				6251BBBF1CB5E28E00D47733 /* main.m in Sources */,
+				62D8C4ED1CB77BC000E5F2E1 /* GPUImageViewController.m in Sources */,
+				6251BBF81CB6436C00D47733 /* AnimatedViewController.m in Sources */,
+				6251BBE71CB6003500D47733 /* BasicViewController.m in Sources */,
+				6251BBE41CB5E4C800D47733 /* RootTableViewController.m in Sources */,
+				62660A941CBB964B00C76D38 /* testViewController.m in Sources */,
+				6251BBF11CB623CA00D47733 /* FXBlurView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6251BBCF1CB5E28E00D47733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6251BBD81CB5E28E00D47733 /* blurViewExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6251BBD51CB5E28E00D47733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6251BBB91CB5E28D00D47733 /* blurViewExample */;
+			targetProxy = 6251BBD41CB5E28E00D47733 /* PBXContainerItemProxy */;
+		};
+		62D8C50C1CB7A74900E5F2E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = 62D8C50B1CB7A74900E5F2E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6251BBC61CB5E28E00D47733 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6251BBC71CB5E28E00D47733 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6251BBCB1CB5E28E00D47733 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6251BBCC1CB5E28E00D47733 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6251BBDA1CB5E28E00D47733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6251BBDB1CB5E28E00D47733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6251BBDD1CB5E28E00D47733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/blurViewExample/framework\"/**";
+				INFOPLIST_FILE = blurViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.blurViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6251BBDE1CB5E28E00D47733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/blurViewExample/framework\"/**";
+				INFOPLIST_FILE = blurViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.blurViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6251BBE01CB5E28E00D47733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = blurViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.blurViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/blurViewExample.app/blurViewExample";
+			};
+			name = Debug;
+		};
+		6251BBE11CB5E28E00D47733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = blurViewExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.blurViewExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/blurViewExample.app/blurViewExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6251BBB51CB5E28D00D47733 /* Build configuration list for PBXProject "blurViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6251BBDA1CB5E28E00D47733 /* Debug */,
+				6251BBDB1CB5E28E00D47733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6251BBDC1CB5E28E00D47733 /* Build configuration list for PBXNativeTarget "blurViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6251BBDD1CB5E28E00D47733 /* Debug */,
+				6251BBDE1CB5E28E00D47733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6251BBDF1CB5E28E00D47733 /* Build configuration list for PBXNativeTarget "blurViewExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6251BBE01CB5E28E00D47733 /* Debug */,
+				6251BBE11CB5E28E00D47733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6251BBB21CB5E28D00D47733 /* Project object */;
+}
